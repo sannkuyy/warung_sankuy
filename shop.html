@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Warung Sankuyy - Shop Page</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                    </a>
+                    <ul class="nav">
+                      <li><a href="index.html">Beranda</a></li>
+                      <li><a href="shop.html" class="active">Daftar Menu</a></li>
+                      <li><a href="product-details.html">Detail Menu</a></li>
+                      <li><a href="contact.html">Kontak</a></li>
+                      <li><a href="#">Sign In</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Daftar Menu</h3>
+          <span class="breadcrumb"><a href="index.html">Beranda</a> > Daftar Menu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section trending">
+    <div class="container">
+      <ul class="trending-filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Lihat Semua</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".adv">Cake</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".str">Snack</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".rac">Drink</a>
+        </li>
+      </ul>
+      <div class="row trending-box">
+        </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="pagination">
+          <li><a href="#"> < </a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="is_active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#"> > </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="product.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        displayProducts(products, '.trending-box'); // Display all products initially
+
+        // Add event listeners for filter buttons
+        document.querySelectorAll('.trending-filter a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                document.querySelectorAll('.trending-filter a').forEach(innerLink => {
+                    innerLink.classList.remove('is_active');
+                });
+                event.target.classList.add('is_active');
+
+                const filter = event.target.dataset.filter;
+                filterProducts(filter);
+            });
+        });
+    });
+  </script>
+
+  </body>
+</html>

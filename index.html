@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Warung Sankuyy</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                    </a>
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Beranda</a></li>
+                      <li><a href="shop.html">Daftar Menu</a></li>
+                      <li><a href="product-details.html">Detail Menu</a></li>
+                      <li><a href="contact.html">Kontak</a></li>
+                      <li><a href="#">Sign In</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="caption header-text">
+            <h6>Selamat Datang di Warung SanKuyy</h6>
+            <h2>"Yang lagi Viral bukan cuma Tiktok, Tapi rasa di sini juga loh"</h2>
+            <p> Warung Sankuyy adalah tempat nongkrong kekinian yang menyajikan berbagai pilihan makanan dan minuman hits dengan cita rasa yang bikin nagih! Dari camilan gurih, makanan berat, sampai minuman segar ala tren masa kini — semua tersedia di sini dengan harga ramah di kantong.</p>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <button role="button">Cari disini</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <img src="assets/images/banner-image.jpeg" alt="">
+            <span class="offer">-20%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/1-removebg-preview.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>beranda</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="contact.html">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/4-removebg-preview.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>Order</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="shop.html">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/2-removebg-preview.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>daftar menu</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="assets/images/3-removebg-preview.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>Detail menu</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>Trending</h6>
+            <h2>Trending Menu</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">Lihat Semua Menu</a>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row trending-box" id="trending-products">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section most-played">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>TOP MENU</h6>
+            <h2>Terlaris</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">Lihat semua</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-01.jpeg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Spicy</span>
+                <h4>Kripik Pedas</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Snack</span>
+                <h4>Dimsum Original</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-03.jpeg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Spicy</span>
+                <h4>Seblak spesial</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-04.jpeg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Snack</span>
+                <h4>Dimsum Mentai</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-05.jpeg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Spicy</span>
+                <h4>Kripset</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/top-game-06.jpeg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Snack</span>
+                <h4>Makaroni Pedas</h4>
+                <a href="product-details.html">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Categories</h6>
+            <h2>Produk Unggulan</h2>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Baso Aci</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/categories-01.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Basreng</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/categories-02.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Dimsum</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/categories-03.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Kripik Setan</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/categories-04.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Makaroni</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="assets/images/categories-05.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shop">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Daftar Menu</h6>
+                  <h2>Ayo order segera jan sampai kehabisan ya... <em>Harga Murmer</em> For You!</h2>
+                </div>
+                <p>Dapatkan Sensasi rasa yang jarang kamu temui di warung lain...</p>
+                <div class="main-button">
+                  <a href="shop.html">Beli Kuyy!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 align-self-end">
+          <div class="subscribe">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Promo!</h6>
+                  <h2>Dapatkan harga Promo! <em>Sekarang!</em></h2>
+                </div>
+                <div class="search-input">
+                  <form id="subscribe" action="#">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
+                    <button type="submit">Kirim kami Saran</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 Sanzo Official Kuyyy.    <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="product.js"></script>
+  <script>
+    // Display the first 4 products on the home page
+    document.addEventListener('DOMContentLoaded', () => {
+        displayProducts(products.slice(0, 4), '#trending-products');
+    });
+  </script>
+
+  </body>
+</html>
